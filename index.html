@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+	  <link rel="stylesheet" href="main.css" />
+
+  </head>
+  <body>
+    <h1 id="title">SamStickz survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" action='https://register-demo.freecodecamp.org' method="post">
+      
+        <label id="name-label">Name<input type="text" name="first-name" placeholder="Enter your name" id="name" required/></label>
+        <label id="address-label"> Address <input type="address" name="address" placeholder="Enter your address" id="address" required /></label>
+       <label id="email-label"> Email <input type="email" name="email" placeholder="Enter your email" id="email" required /></label>
+        <label id="number-label">Age (optional) <input type="number" name="age" placeholder="Age" id="number" min="13" max="60"optional /></label>
+        
+        
+        <label>Which option best describes you?
+          <select id="dropdown">
+            <option value="">Student</option>
+            <option value="1">Working class</option>
+            <option value="2">Self employed</option></select></label>
+
+    <label>  What is your gender?
+        <select name="choose">
+            <option value="">select an option </option>
+            <option value="1">Male</option>
+             <option value="2">Female</option>
+              </select>  </label>
+        <label>
+       How well do you know me?
+        <label><input type="radio" value="too well" name="account-type" class="inline" /> Too well</label>
+        <label><input type="radio" value="maybe" name="account-type" class="inline" /> Maybe</label>
+        <label><input type="radio" value="not really" name="account-type" class="inline" /> Not really </label>
+          
+        <label>
+          How did we meet?</label>
+          <input type="checkbox" value="social media" name="terms" class="inline" required /> Social media
+        <label>
+          <input type="checkbox" value="school" name="terms" class="inline" required /> In school
+			  </label><label>
+          <input type="checkbox" value="friends" name="terms" class="inline" required /> Through a friend?
+			  </label><label>
+          <input type="checkbox" value="childhood" name="terms" class="inline" required /> Childhood
+			  </label><label>
+          <input type="checkbox" value="anonymous" name="terms" class="inline" required /> Anonymously</label>
+			  <label>
+          <input type="checkbox" value="road" name="terms" class="inline" required /> On the road/while travelling
+			  </label>
+      </fieldset>
+			  </label>
+        How can i improve
+          <textarea name="bio" rows="5" cols="60" placeholder="Enter your comments here"></textarea>
+			  </label>
+     <input id="submit" type="submit" value="Submit" /></button>
+    </form>
+  </body>
